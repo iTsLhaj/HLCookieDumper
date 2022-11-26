@@ -1,6 +1,6 @@
 # CookieDumper
 
-- Cookie dumper for hoyolab daily checkin ...
+- Cookie dumpper for hoyolab daily checkin ...
 
 ## Installation
 ```sh
