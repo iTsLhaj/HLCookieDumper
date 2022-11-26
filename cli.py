@@ -91,4 +91,3 @@ class CookieDumpper(object):
 
 
 CLI = CookieDumpper
-CLI()
