@@ -2,6 +2,11 @@
 
 - Cookie dumper for hoyolab daily checkin ...
 
+## Installation
+```sh
+pip install -r requirements
+```
+
 ### Usage
 ```py
 
