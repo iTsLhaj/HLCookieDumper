@@ -1,0 +1,4 @@
+browser_cookie3==0.16.2
+colored==1.4.4
+dill==0.3.6
+inquirer==3.0.0
