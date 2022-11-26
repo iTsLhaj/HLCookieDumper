@@ -26,6 +26,7 @@ CLI()
 
 
 NOTE: YEAH BOI THE DAILY CHECKER WILL BE IN MY DISCORD I WON'T UPLOAD IT HH
-      kidding i will upload it asap
+
+*kidding i will upload it asap*
 
 Discord: [How To Ils9ayn](https://discord.gg/QKM3DccBJp)
