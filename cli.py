@@ -21,8 +21,9 @@ class CookieDumpper(object):
         self.linux_ = platform.system() == 'Linux'
         self.cleanscrn(self.linux_)
 
-        # is user exists
-        # get all ids from file
+        # check if cookies dir exists
+        if not os.path.exists('./cookies'):
+            os.mkdir('cookies')
 
         self.ids_ = []
         for cjFile in os.listdir('cookies'):
@@ -30,21 +31,17 @@ class CookieDumpper(object):
             id_ = id_.replace('.bin', '')
             self.ids_.append(id_)
         
-        self.getCookies(
-            browser=self.pickOpt())
+        self.browser_ = self.pickOpt()
+        self.getCookies(browser=self.browser_)
         
         print('\n')
 
     def dump_(self, Cookies: CookieJar) -> None:
 
         self.cleanscrn(self.linux_, 1)
-
-        # check if cookies dir exists
-        if not os.path.exists('./cookies'):
-            os.mkdir('cookies')
         
         for cookie in Cookies:
-            if cookie.name == 'account_id':
+            if cookie.name == 'ltuid':
                 print(f"[{fg(94)}+{attr(0)}] id: {cookie.value}")
 
                 if cookie.value in self.ids_:
@@ -57,7 +54,7 @@ class CookieDumpper(object):
                 break
 
     def getCookies(self, browser: str) -> CookieJar:
-        
+
         if browser.lower() == 'chrome':
             return self.dump_(browser_cookie3.chrome(domain_name=const.DOMAIN_NAME))
         elif browser.lower() == 'firefox':
