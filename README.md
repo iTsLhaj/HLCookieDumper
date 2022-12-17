@@ -21,6 +21,6 @@ CLI()
 
 ! if you got any issue submit it i'll be glad to help :D
 
-_GenshinClaimer Will be delayed for anouther time **not cancelled** !_
+_GenshinClaimer Will be delayed for another time **not cancelled** !_
 
 Discord: [How To Ils9ayn](https://discord.gg/QKM3DccBJp)
